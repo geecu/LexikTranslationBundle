@@ -97,7 +97,7 @@ $(document).ready(function() {
             };
 
             if (id && id !== lastSelected) {
-                jQuery('#trans-grid').jqGrid("restoreRow", lastSelected);
+                jQuery('#trans-grid').jqGrid("saveRow", lastSelected);
                 jQuery('#trans-grid').jqGrid("editRow", id, editParams);
                 lastSelected = id;
             }
